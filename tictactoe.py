@@ -145,6 +145,9 @@ def main():
                 printBoard(board)
             else:
                 print('You won this time')
+                score = keepScore()
+                print("X Score: ", score[0], "O Score: ", score[1])
+                play = False
                 break
 
         if isBoardFull(board):
